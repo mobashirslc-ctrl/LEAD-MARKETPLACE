@@ -193,16 +193,57 @@ export default function LandingPage() {
         </Button>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t bg-gray-50 mt-20">
-        <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between text-gray-600 gap-4">
-          <div className="flex items-center gap-2">
-            <img src={logoImg} alt="GLead Logo Mini" className="w-6 h-6 object-contain" />
-            <span className="font-bold text-gray-800">GLead BD</span>
+      {/* 📊 NEW PRO FOOTER: 10 Core Options Organized */}
+      <footer className="border-t bg-slate-900 text-gray-300 mt-20 pt-16 pb-8">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12 text-left">
+          
+          {/* Brand Identity */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-2">
+              <img src={logoImg} alt="GLead Logo Footer" className="w-8 h-8 object-contain brightness-110" />
+              <span className="text-xl font-black text-white tracking-wider">GLead BD</span>
+            </div>
+            <p className="text-xs text-gray-400 leading-relaxed">
+              Bangladesh's premier decentralized B2B lead generation & transparent exchange marketplace.
+            </p>
           </div>
-          <p className="text-sm">© 2026 GLead. All rights reserved.</p>
+
+          {/* Column 1: Company (4 Options) */}
+          <div>
+            <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-orange-500 pl-2">Company</h4>
+            <ul className="space-y-2 text-sm">
+              <li><span className="hover:text-white cursor-pointer transition">1. About Us</span></li>
+              <li><span className="hover:text-white cursor-pointer transition">2. Careers</span></li>
+              <li><span className="hover:text-white cursor-pointer transition">3. Success Stories</span></li>
+              <li><span className="hover:text-white cursor-pointer transition">4. Press & Media</span></li>
+            </ul>
+          </div>
+
+          {/* Column 2: Ecosystem (3 Options) */}
+          <div>
+            <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-green-500 pl-2">Ecosystem</h4>
+            <ul className="space-y-2 text-sm">
+              <li><span className="hover:text-white cursor-pointer transition">5. Our Services</span></li>
+              <li><span className="hover:text-white cursor-pointer transition">6. B2B Blog</span></li>
+              <li><span className="hover:text-white cursor-pointer transition">7. Premium Subscriptions</span></li>
+            </ul>
+          </div>
+
+          {/* Column 3: Contact & Legal (3 Options - Total 10) */}
+          <div>
+            <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-emerald-500 pl-2">Contact & Legal</h4>
+            <ul className="space-y-2 text-sm">
+              <li><span className="hover:text-white font-semibold text-orange-400 cursor-pointer transition">8. Contact Support</span></li>
+              <li><span className="hover:text-white cursor-pointer transition">9. Privacy Policy</span></li>
+              <li><span className="hover:text-white cursor-pointer transition">10. Terms of Service</span></li>
+            </ul>
+          </div>
+
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="max-w-7xl mx-auto px-4 border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-2">
+          <p>© 2026 GLead Marketplace. All rights reserved.</p>
+          <p>Engineered for high-transparency businesses.</p>
         </div>
       </footer>
-    </div>
-  );
-}
