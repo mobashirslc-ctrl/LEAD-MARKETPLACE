@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import logoImg from './gorun-logo.png';
 import { Button, TextField, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 import { useAuth } from '../context/AuthContext';
 import { categories, UserRole } from '../data/categories';
@@ -39,16 +40,18 @@ export default function SignupPage() {
       <div className="w-full max-w-2xl">
         {/* Header */}
         <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 mb-4">
-            <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500 to-green-500 flex items-center justify-center text-white font-bold text-2xl">
-              LM
-            </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-green-600 bg-clip-text text-transparent">
-              LeadMarket BD
+          <div className="inline-flex items-center gap-3 mb-4 cursor-pointer" onClick={() => navigate('/')}>
+            <img 
+              src={logoImg} 
+              alt="GLead Logo" 
+              className="w-12 h-12 object-contain rounded-lg"
+            />
+            <span className="text-3xl font-black bg-gradient-to-r from-green-600 to-emerald-800 bg-clip-text text-transparent tracking-tight">
+              GLead
             </span>
           </div>
-          <h1 className="text-3xl font-bold mb-2">Create Your Account</h1>
-          <p className="text-gray-600">Step {step} of 3</p>
+          <h1 className="text-3xl font-bold mb-2 text-gray-800">Create Your Account</h1>
+          <p className="text-gray-500 font-medium">Step {step} of 3</p>
         </div>
 
         {/* Progress Bar */}
