@@ -4,7 +4,7 @@ import { TrendingUp, Users, Shield, Wallet } from 'lucide-react';
 import { categories } from '../data/categories';
 
 // ল্যান্ডিং পেজের সেম ডিরেক্টরি থেকে লোগো ইমেজটি ইম্পোর্ট করা হলো
-import logoImg from './gorun logo.png';
+import logoImg from './gorun-logo.png';
 
 export default function LandingPage() {
   const navigate = useNavigate();
