@@ -247,3 +247,6 @@ export default function LandingPage() {
           <p>Engineered for high-transparency businesses.</p>
         </div>
       </footer>
+    </div>
+  );
+}
